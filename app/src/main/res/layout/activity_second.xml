@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="#4064BF">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="48dp"
+        android:text="Cinsiyetinizi Seçiniz"
+        android:textColor="#862D64"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonErkek"
+            android:layout_width="142dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            android:text="Erkek"
+            android:textColor="#602055"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKadın"
+            android:layout_width="142dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            android:text="Kadın"
+            android:textColor="#602055"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="92dp"
+        android:background="#862D64"
+        android:text="GÖNDER"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="17dp"
+        android:background="#4064BF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/cinsiyet" />
+
+</android.support.constraint.ConstraintLayout>

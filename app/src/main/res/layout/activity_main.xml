@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:text="HOŞGELDİNİZ"
+        android:textColor="#602055"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextİsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#602055"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextSoyisim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:ems="10"
+        android:hint="Soyisim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#602055"
+        app:layout_constraintTop_toBottomOf="@+id/editTextİsim" />
+
+    <EditText
+        android:id="@+id/editTextNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:ems="10"
+        android:hint="Numara"
+        android:inputType="textPersonName|number"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#602055"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSoyisim" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="149dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:background="#6B2469"
+        android:text="GÖNDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNo" />
+</android.support.constraint.ConstraintLayout>
